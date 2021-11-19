@@ -20,5 +20,4 @@ app.use((error, request, response, next) => {
         .status(400)
         .json({ error: "error", message: "Internal server error" });
 });
-const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Server runnig on http://localhost:${port}`));
+app.listen(process.env.PORT || 3000, () => console.log("🏃 Running Server"));
